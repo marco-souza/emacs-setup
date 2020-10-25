@@ -5,11 +5,11 @@ if [[ ! -e ~/.emacs.d/ ]]; then
 fi
 
 echo Copying spacemacs configs...
+DEST=$HOME/.spacemacs
 if [[ -e ./spacemacs ]]; then
-  cat ./spacemacs > $HOME/.spacemacs
+  cat ./spacemacs > $DEST
 else
-  cat ./spacemacs > $HOME/.spacemacs
-  curl https://raw.githubusercontent.com/marco-souza/emacs-setup/main/init.toml > $HOME/.SpaceVim.d/init.toml
+  curl https://raw.githubusercontent.com/marco-souza/emacs-setup/main/spacemacs > $DEST
 fi
 
 echo "Your emacs is ready to go :)"
