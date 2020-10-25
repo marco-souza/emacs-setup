@@ -14,5 +14,9 @@ For MacOS and Linux, just copy and paste the following command in your terminal:
 
 ```
 curl -sLf https://raw.githubusercontent.com/marco-souza/emacs-setup/main/setup.sh | bash
+
+# or
+
+curl -sLf https://cutt.ly/emacs-setup | bash
 ```
 
