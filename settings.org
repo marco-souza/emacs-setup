@@ -1,0 +1,6 @@
+* Add new TODO states
+
+#+BEGIN_SRC emacs-lisp
+(setq org-todo-keywords
+      '((sequence "TODO" "IN PROGRESS" "|" "DONE" "CANCELED")))
+#+END_SRC
