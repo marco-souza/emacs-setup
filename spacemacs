@@ -40,15 +40,19 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
+     go
      git
+     yaml
+     html
+     json
+     python
+     prettier
      markdown
      javascript
      typescript
-     python
-     go
-     spell-checking
      syntax-checking
      version-control
+     wakatime
      (org :variables
           org-want-todo-bindings t
           org-enable-github-support t
@@ -63,6 +67,7 @@ values."
           org-journal-time-format "")
      (shell :variables
             shell-default-height 30
+            shell-default-term-shell "/bin/zsh"
             shell-default-position 'bottom)
     )
    ;; List of additional packages that will be installed without being
