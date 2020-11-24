@@ -21,10 +21,7 @@ This function should only modify configuration layer settings."
      yaml
      html
      json
-     ts-ls
      python
-     json-ls
-     jsts-ls
      markdown
      javascript
      typescript
@@ -32,7 +29,6 @@ This function should only modify configuration layer settings."
 
      ;; Lint and Format
      prettier
-     eslint
 
      ;; Editor configs
      auto-completion
