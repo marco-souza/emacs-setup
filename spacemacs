@@ -14,24 +14,34 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     helm
-     auto-completion
-     better-defaults
-     emacs-lisp
-     lsp
+     ;; Languages
      go
      git
+     lsp
      yaml
      html
      json
+     ts-ls
      python
-     prettier
+     json-ls
+     jsts-ls
      markdown
      javascript
      typescript
+     emacs-lisp
+
+     ;; Lint and Format
+     prettier
+     eslint
+
+     ;; Editor configs
+     auto-completion
+     better-defaults
      syntax-checking
      version-control
      wakatime
+     helm
+     ;; org-mode
      (org :variables
           org-want-todo-bindings t
           org-enable-github-support t
@@ -44,6 +54,7 @@ This function should only modify configuration layer settings."
           org-journal-date-format "%A, %B %d %Y"
           org-journal-time-prefix "* "
           org-journal-time-format "")
+     ;; shell
      (shell :variables
             shell-default-height 30
             shell-default-term-shell "/bin/zsh"
