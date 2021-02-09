@@ -52,9 +52,9 @@ This function should only modify configuration layer settings."
           org-journal-time-format "")
      ;; shell
      (shell :variables
-            shell-default-height 30
+            shell-default-height 40
             shell-default-term-shell "/bin/zsh"
-            shell-default-position 'bottom)
+            shell-default-position 'top)
      multiple-cursors
      treemacs)
 
@@ -411,6 +411,9 @@ It should only modify the values of Spacemacs settings."
    ;; (default nil - same as frame-title-format)
    dotspacemacs-icon-title-format nil
 
+   ;; Show trailing whitespace (default t)
+   dotspacemacs-show-trailing-whitespace t
+
    ;; Delete whitespace while saving buffer. Possible values are `all'
    ;; to aggressively delete empty line and long sequences of whitespace,
    ;; `trailing' to delete only the whitespace at end of lines, `changed' to
@@ -443,7 +446,11 @@ It should only modify the values of Spacemacs settings."
 
    ;; If nil the home buffer shows the full path of agenda items
    ;; and todos. If non nil only the file name is shown.
-   dotspacemacs-home-shorten-agenda-source nil))
+   dotspacemacs-home-shorten-agenda-source nil
+
+   ;; If non-nil then byte-compile some of Spacemacs files.
+   dotspacemacs-byte-compile nil))
+
 
 (defun dotspacemacs/user-env ()
   "Environment variables setup.
