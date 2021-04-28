@@ -1,6 +1,21 @@
 * Add new TODO states
-
+  
+  Setup TODO keywords
 #+BEGIN_SRC emacs-lisp
 (setq org-todo-keywords
       '((sequence "TODO" "IN PROGRESS" "|" "DONE" "CANCELED")))
 #+END_SRC
+
+
+  Disable deno-ls by default
+#+BEGIN_SRC emacs-lisp
+(use-package lsp-mode
+  :init
+  (setq lsp-keymap-prefix "s-m"
+        lsp-prefer-capf t
+        ;; lsp-log-io t ; enable debug log - can be a huge performance hit
+        lsp-disabled-clients '(deno-ls)
+        lsp-treemacs-sync-mode 1
+        ))
+#+END_SRC
+
